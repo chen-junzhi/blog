@@ -46,8 +46,8 @@ body {
 .mr5{
     margin-right: 5px;
 }
-.pd5 {
-    padding: 5px;
+.pd15 {
+    padding: 0 15px;
 }
 .pd10 {
     padding: 10px;
@@ -539,15 +539,128 @@ body {
     }
 }
 
+/* 笔记导航 */
 #container aside .note-nav li {
     float: left;
-    width: 40%;
+    width: 48%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 16px;
+
+    border: 1px solid #666666;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    height: 150%;
+    line-height: 200%;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+#container aside .note-nav li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #000000;
 }
 /* odd奇数 even偶数 */
+
+#container aside .note-nav li:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
 #container aside .note-nav li:nth-child(even) {
     float: right;
+}
+
+/* 热门推荐 */
+#container aside .l-s span{
+    display: inline-block;
+    height: 100%;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#container aside .l-s li {
+    width: 100%;
+    height: 150%;
+    line-height: 200%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#container aside .l-s li a:hover {
+    text-decoration: underline;
+    color: #2430ff;
+}
+#container aside .l-s li a {
+    display: inline-block;
+    height: 100%;
+    color: #000000;
+}
+
+/* 下载排行 */
+#container aside .download-rank li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 150%;
+    line-height: 200%;
+    padding: 4px 0;
+    border-bottom: 1px dashed #000000;
+}
+#container aside .download-rank span {
+    margin-right: 8px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    color: #ffffff;
+    margin-top: 6px;
+    text-align: center;
+    background-color: #8eb9f5;
+}
+#container aside .download-rank a {
+    display: inline-block;
+    color: #000000;
+}
+#container aside .download-rank span.top1 {
+    background-color: #f54545;
+}
+#container aside .download-rank span.top2 {
+    background-color: #ff8547;
+}
+#container aside .download-rank span.top3 {
+    background-color: #ffac38;
+}
+
+/* 最新评论 */
+#container aside .c-items {
+    border: 1px dotted #000000;
+    margin: 10px;
+    padding: 10px;
+}
+#container aside .c-items div {
+    line-height: 24px;
+    font-size: 12px;
+}
+#container aside .c-items .c-people {
+    float: right;
+}
+#container aside .c-items:after {
+    content: "";
+    clear: both;
+    display: block;
 }
