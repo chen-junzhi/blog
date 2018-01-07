@@ -1,4 +1,5 @@
 $(function(){
+    var timer;
     var wi =$('.navbar-header').width();
     if( wi >0 ){
         $('#mynav ul div').removeClass('move-bg');
@@ -35,4 +36,45 @@ $(function(){
         });
     });
 
+    /* 返回顶部 */
+    $(window).scroll(function(){
+        if ( $(window).scrollTop() >= 200 ) {
+            $('.toTop a').slideDown();
+        }else {
+            $('.toTop a').slideUp();
+        }
+    });
+
+    $('.toTop a').click(function () {
+        $('html,body').animate({
+            scrollTop: 0
+        },500)
+    });
+
+    //推荐任务栏任务滚动
+    function AutoScroll(obj) {
+        var liHeight = $(obj).find("li:first").height();
+        //$(obj).find("ul").scrollTop("-72px");
+        console.log(liHeight);
+        $(obj).find("ul:first").animate({
+                marginTop: "-" + 104 + "px"
+            },
+            1500,
+            function() {
+                $(this).css({
+                    marginTop: "0px"
+                }).find("li:first").appendTo(this);
+            });
+    }
+    timer = setInterval(function(){
+        AutoScroll('.c-new');
+    }, 2000);
+
+    $('.c-new').hover(function(){
+        clearInterval(timer);
+    },function(){
+        setInterval(function(){
+            AutoScroll('.c-new');
+        },2000)
+    });
 });
