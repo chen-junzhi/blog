@@ -27,7 +27,7 @@ img {
 }
 body {
     min-width: 320px;
-    min-height: 1000px;
+    min-height: 100%;
     background: url("../image/bg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
@@ -635,6 +635,11 @@ body {
 #container aside .download-rank a {
     display: inline-block;
     color: #000000;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
 }
 #container aside .download-rank span.top1 {
     background-color: #f54545;

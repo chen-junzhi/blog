@@ -51,15 +51,31 @@ $(function(){
         },500)
     });
 
+    //下载排行移入移出
+    $('.download-rank li a').hover(function () {
+        $(this).stop().animate({
+            marginLeft: "8px"
+        }).css({
+           "color": "red",
+           "fontWeight": "bold"
+        });
+    },function () {
+        $(this).stop().animate({
+            marginLeft: "0px"
+        }).css({
+            "color": "black",
+            "fontWeight": "normal"
+        });
+    });
+
     //推荐任务栏任务滚动
     function AutoScroll(obj) {
         var liHeight = $(obj).find("li:first").height();
         //$(obj).find("ul").scrollTop("-72px");
-        console.log(liHeight);
         $(obj).find("ul:first").animate({
                 marginTop: "-" + 104 + "px"
             },
-            1500,
+            2000,
             function() {
                 $(this).css({
                     marginTop: "0px"
@@ -68,13 +84,16 @@ $(function(){
     }
     timer = setInterval(function(){
         AutoScroll('.c-new');
-    }, 2000);
+    }, 1500);
 
     $('.c-new').hover(function(){
+        //$('.c-new').find("ul:first").stop();
         clearInterval(timer);
     },function(){
-        setInterval(function(){
+        timer = setInterval(function(){
             AutoScroll('.c-new');
-        },2000)
+        },1500)
     });
+
+
 });
