@@ -426,12 +426,12 @@ body {
     overflow: hidden;
 }
 #container article section li .article-con .art-con-item {
-    margin-right: 8px;
+    margin-right: 5px;
     font-size: 12px;
     color: #FF6700;
 }
 #container article section li .article-con .art-con-item span {
-    padding-right: 4px;
+    padding-right: 2px;
 }
 #container article section li .article-con .art-con-item i {
     color: #666;
