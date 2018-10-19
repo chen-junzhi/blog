@@ -1,83 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>陈俊志个人博客 - 一个聊音乐与技术的论坛</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" href="image/icon.png">
+
+    <script type="text/javascript" src="js/jquery-v1.10.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+<!-- 头部开始 -->
+<header id="myheader">
+    <nav class="nav navbar-default navbar-fixed-top" role="navgation" id="mynav">
+        <div class="container-fluid top">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="image/logo.jpg">
+                </a>
+            </div>
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="#">文章</a></li>
+                    <li><a href="#">随笔</a></li>
+                    <li><a href="#">资源分享</a></li>
+                    <li><a href="#">学海无涯</a></li>
+                    <li><a href="#">留言</a></li>
+                    <div class="move-bg" style="display: block; position: absolute; z-index: -100; top: 0; left: 0; background: #d8d8d8; opacity: 1; height: 80px; transition: all 0.5s; transform: scale(0);"></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- 头部结束 -->
+
+<!-- 内容区开始 -->
+<div id="container" class="clear-after">
+    <!-- 文章部分开始 -->
+    <article>
+        <!-- 1、首页照片展示 -->
+        <div class="mb25 index_ban borderRadius boxShadow">
+            <a href="index.html" target="_blank">
+                <img src="image/ban.jpg" class="borderRadius imgB">
+                <img src="image/ban.jpg" class="borderRadius imgT">
+            </a>
+            <ul class="texts">
+                <p>我们不停的翻弄着回忆</p>
+                <p>却再也找不回那时的自己</p>
+                <p>红尘一梦，不再追寻</p>
+                <p>By - 陈俊志</p>
+            </ul>
+        </div>
+        <!-- 2、置顶项 -->
+        <div class="article-top bgOpacity borderRadius boxShadow mb30">
+            <div class="article-top-wrap  pd20">
+                <h2 class="article-top-title"><a href="javascript:;" title="">这里是置顶项标题</a></h2>
+                <div class="article-top-con">这里是置顶项内容 这里是置顶项内容 这里是置顶项内容 这里是置顶项内容 这里是置顶项内容...</div>
+            </div>
+        </div>
+
+        <!-- 3、章节部分开始 -->
+        <section>
+            <ul>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="article-item mb25 borderRadius">
+                    <div class="clear-after pd20">
+                        <div class="article-img left"><img src="image/view.jpg" class="borderRadius"></div>
+                        <div class="article-con right">
+                            <a href="javascript:;">
+                                <h2 class="sec-title">这里是文章标题</h2>
+                                <p class="sec-con">这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容 这里是文章内容...</p>
+                            </a>
+                            <ul>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><i class="time">1天前</i>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><i class="author">陈俊志</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><i class="comment">2</i></a>
+                                </li>
+                                <li class="art-con-item left">
+                                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><i class="view">22</i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- 章节部分结束 -->
+    </article>
+    <!-- 文章部分结束 -->
 
 
-  <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
-    </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
-    </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
-    </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
-    </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
-    </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
-    </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
-    </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
-    </div>
-  </div>
+    <!-- 旁边部分开始 -->
+    <aside>
+        <!-- 乐于交友 -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-heart mr5"></span><span style="font-weight: bold;font-size: 16px;">乐于交友</span>
+            </div>
+            <ul class="clear-after contact">
+                <li class="wechat left"><a href="javascript:;"><img src="image/mm.png"></a><p>微信</p></li>
+                <li class="QQ left"><a href="javascript:;"><img src="image/qq.png"></a><p>QQ</p></li>
+                <li class="sina left "><a href="javascript:;"><img src="image/sinaweibo.png"></a><p>新浪微博</p></li>
+            </ul>
+            <div class="navbar-form clear-after" style="width: 80%; margin: 0 auto;">
+                <input type="text" class="form-control" name="" placeholder="请输入搜索内容">
+                <button class="btn btn-success" style="padding: 6px 1px;">搜索</button>
+            </div>
+        </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+        <!-- 笔记之类的导航 （glyphicon glyphicon-pencil  笔记     glyphicon glyphicon-tags  教程  glyphicon glyphicon-link  资源） 背景图滑动效果 a标签hover效果-->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-pencil mr5"></span><span style="font-weight: bold;font-size: 16px;">笔记导航</span>
+            </div>
+            <div class="pd15">
+                <ul class="note-nav">
+                    <li><a href="javascript:;">从你的全世界路过</a></li>
+                    <li><a href="javascript:;">秀秀的铁拳</a></li>
+                    <li><a href="javascript:;">当你的眼睛眯着笑</a></li>
+                    <li><a href="javascript:;">武汉之旅</a></li>
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
+        </div>
 
-<script>
-  function removeTransition(event) {
-    if (event.propertyName !== 'transform') return; // 过滤其中一种事件
-    event.target.classList.remove('playing'); // 移除高亮的样式
-  }
+        <!-- 热门推荐 -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-hand-right mr5"></span><span style="font-weight: bold;font-size: 16px;">热门推荐<sup style="color: red; margin-left: 2px;">Hot</sup></span>
+            </div>
+            <div class="pd15">
+                <ul class="l-s">
+                    <li><span>·</span><a href="javascript:;">从你的全世界路过</a></li>
+                    <li><span>·</span><a href="javascript:;">秀秀的铁拳</a></li>
+                    <li><span>·</span><a href="javascript:;">当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑</a></li>
+                    <li><span>·</span><a href="javascript:;">武汉之旅</a></li>
+                </ul>
+            </div>
+        </div>
 
-  function playSound(event) {
-    const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`); // 根据触发按键的键码，获取对应音频
-    const key = document.querySelector(`div[data-key="${event.keyCode}"]`); // 获取页面对应按钮 DIV 元素
-    if (!audio) return; // 处理无效的按键事件
+        <!-- 下载排行 -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-download-alt mr5"></span><span style="font-weight: bold;font-size: 16px;">下载排行</span>
+            </div>
+            <div class="pd15">
+                <ul class="download-rank">
+                    <li><span class="top1">1</span><a href="javascript:;" title="从你的全世界路过">从你的全世界路过</a></li>
+                    <li><span class="top2">2</span><a href="javascript:;" title="秀秀的铁拳">秀秀的铁拳</a></li>
+                    <li><span class="top3">3</span><a href="javascript:;" title="当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑">当你的眼睛眯着笑当你的眼睛眯着笑当你的眼睛眯着笑</a></li>
+                    <li><span>4</span><a href="javascript:;" title="武汉之旅">武汉之旅</a></li>
+                    <li><span>5</span><a href="javascript:;" title="武汉之旅">武汉之旅</a></li>
+                    <li><span>6</span><a href="javascript:;" title="武汉之旅">武汉之旅</a></li>
+                </ul>
+            </div>
+        </div>
 
-    key.classList.add('playing'); // 改变样式
-    audio.currentTime = 0; // 每次播放之后都使音频播放进度归零
-    audio.play(); // 播放相应音效
-  }
+        <!-- 最新评论(自动往上翻) -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-comment mr5"></span><span style="font-weight: bold;font-size: 16px;">最新评论</span>
+            </div>
+            <div class="pd15 c-new">
+                <ul>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">999999999999</div>
+                        <div class="c-people">----By 湖南智障A网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666fdsfdsfdsfs圣达菲大使馆大使刚刚大概豆腐干对方给对方给淀粉</div>
+                        <div class="c-people">----By 湖南智障B网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666</div>
+                        <div class="c-people">----By 湖南智障C网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666</div>
+                        <div class="c-people">----By 湖南智障D网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">999999999999</div>
+                        <div class="c-people">----By 湖南智障A网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666fdsfdsfdsfs圣达菲大使馆大使刚刚大概豆腐干对方给对方给淀粉</div>
+                        <div class="c-people">----By 湖南智障B网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666</div>
+                        <div class="c-people">----By 湖南智障C网友</div>
+                    </li>
+                    <li class="c-items">
+                        <div class="c-title">《<a href="javascript:;">从你的全世界路过</a>》</div>
+                        <div class="c-content">66666666666</div>
+                        <div class="c-people">----By 湖南智障D网友</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-  const keys = Array.from(document.querySelectorAll('.key')); // 获取页面所有按钮元素
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // 添加 transition 事件监听
-  window.addEventListener('keydown', playSound);
-</script>
+        <!-- 友情链接（glyphicon glyphicon-paperclip） -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-paperclip mr5"></span><span style="font-weight: bold;font-size: 16px;">友情链接</span>
+            </div>
+            <div class="pd15">
+                <ul class="f-link">
+                    <li><a href="http://www.baidu.com">百度</a></li>
+                    <li><a href="http://www.zuoxiaolong.com">左晓龙</a></li>
+                    <li><a href="http://www.taobao.com">淘宝</a></li>
+                    <li><a href="http://www.baidu.com">百度</a></li>
+                    <li><a href="http://www.zuoxiaolong.com">左晓龙</a></li>
+                    <li><a href="http://www.taobao.com">淘宝</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- 广告栏招租 -->
+        <div class="mb30 bgOpacity boxShadow borderRadius pdb">
+            <div class="pd10">
+                <span class="glyphicon glyphicon-apple mr5"></span><span style="font-weight: bold;font-size: 16px;">广告栏招租</span>
+            </div>
+            <div class="ad-hire">
+                <div class="hire">
+                    <a href="http://www.suning.com">
+                        <img src="image/adImg.jpg" title="苏宁易购" alt="" class="adImg">
+                        <img src="image/ad.png" class="ad">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+    <!-- 旁边部分结束 -->
+
+    <!-- 返回顶部 -->
+    <div class="toTop"><a href="javascript:;"></a></div>
+</div>
+<!-- 内容区结束 -->
+
+
+<!-- 尾部开始 -->
+<footer>
+    <div>Copyright&copy;2017-2018  陈俊志个人博客 版权所有 <a href="javascript:;">湘ICP备88888888号</a></div>
+</footer>
+<!-- 尾部结束 -->
 
 </body>
 </html>
